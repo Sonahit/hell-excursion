@@ -14,9 +14,9 @@ export default function Feedback({feedback}: Props): ReactElement {
         <h3>
           Отзывы
         </h3>
-        <div className="main__feedback__list">
-          {feedback.map(f => <FeedbackItem {...f}/>)}
-        </div>
+      </div>
+      <div className="main__feedback__list">
+        {feedback.map(f => <FeedbackItem {...f}/>)}
       </div>
     </section>
   )

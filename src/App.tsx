@@ -1,4 +1,4 @@
-import React, { ReactElement, lazy } from 'react'
+import React, { ReactElement, useState } from 'react'
 import Layout from '@components/Layout'
 import Header from '@components/Header'
 import Home from '@components/Home';
@@ -7,10 +7,12 @@ import './App.scss';
 
 
 export default function App(): ReactElement {
+  const [epilespy, setEpilespy] = useState(false);
   return (
     <Layout>
+      <button onClick={() => setEpilespy(!epilespy)}>{epilespy ? 'Stop epilepsy' : 'Toggle epilepsy'}</button>
       <Header/>
-      <Home/>
+      <Home epilepsy={epilespy}/>
       <Footer/>
     </Layout>
   )
