@@ -12,9 +12,6 @@
       z-index: 2;
     }
     &__right-there, &__up-there, &__down-there, &__left-there{
-      position: relative;
-      width: 100%;
-      height: 100%;
       color: red;
       justify-self: center;
       align-self: center;
@@ -28,10 +25,10 @@
     }
 
     &__up-there, &__down-there{
-      width: 200%;
-      height: 220%;
-      top: 70%;
-      padding: 20px;
+      position: absolute;
+      width: 60%;
+      height: 60%;
+      top: 0%;
       p{
         position: absolute;
         top: 50%;
@@ -42,7 +39,10 @@
       }
     }
     &__left-there, &__right-there{
-      width: 150%;
+      position: absolute;
+      width: 8%;
+      height: 50%;
+      top: -15%;
       p{
         position: absolute;
         top: 50%;
@@ -52,17 +52,14 @@
     }
 
     &__right-there {
-      grid-area: a;
+      left: 10%;
       p{
         left: 40%;
       }
     }
 
     &__left-there {
-      grid-area: b;
-      padding-left: 10px;
-      position: relative;
-      left: 40%;
+      left: 20%;
       p{
         left: 60%;
       }
@@ -70,12 +67,11 @@
 
     &__up-there {
       grid-area: c;
-      left: 5%;
     }
 
     &__down-there {
       grid-area: d;
-      right: -5%;
+      left: 16%;
     }
   }
   &-logo, &-title{

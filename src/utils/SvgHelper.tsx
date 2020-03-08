@@ -6,7 +6,7 @@ interface Props {
   svgProperties?: SVGProps<any>
 }
 
-export default function AssetsHelper({ id, className = "", styles={}, svgProperties = {} }: Props): ReactElement {
+export default function SvgHelper({ id, className = "", styles={}, svgProperties = {} }: Props): ReactElement {
 
   return (
   <svg focusable="true" className={className} style={styles} {...svgProperties}>

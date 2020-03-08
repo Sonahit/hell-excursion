@@ -1,7 +1,9 @@
 import React, { ReactElement } from 'react'
 
 import './Header.scss';
-import SvgHelper from '@utils/SvgHelper';
+import LogoSnippet from './snippets/LogoSnippet';
+import ArrowSnippet from './snippets/ArrowSnippet';
+import ArrowBigSnippet from './snippets/ArrowBigSnippet';
 
 interface Props {
 
@@ -42,23 +44,23 @@ export default function Header({}: Props): ReactElement {
   return (
     <header className="header">
       <div className="header-logo">
-        <SvgHelper id="logo" styles={{width: 130}}/>
+        <LogoSnippet styles={{width: 130}}/>
       </div>
       <nav className="header-nav">
         <div className="header-nav__right-there">
-          <SvgHelper id="arrow" styles= {rightArrow} svgProperties={{fill: "black"}}/>
+          <ArrowSnippet styles= {rightArrow} svgProperties={{fill: "black"}}/>
           <p>туда</p>
         </div>
         <div className="header-nav__left-there">
-          <SvgHelper id="arrow" styles= {leftArrow} svgProperties={{fill: "black"}}/>
+          <ArrowSnippet styles= {leftArrow} svgProperties={{fill: "black"}}/>
           <p>сюда</p>
         </div>
         <div className="header-nav__up-there">
-          <SvgHelper id="arrow-big" styles= {downArrow} svgProperties={{fill: "black"}}/>
+          <ArrowBigSnippet styles= {downArrow} svgProperties={{fill: "black"}}/>
           <p>куда-то</p>
         </div>
         <div className="header-nav__down-there">
-          <SvgHelper id="arrow-big" styles= {upArrow} svgProperties={{fill: "black"}}/>
+          <ArrowBigSnippet styles= {upArrow} svgProperties={{fill: "black"}}/>
           <p>обратно</p>
         </div>
       </nav>

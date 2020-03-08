@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react'
-import SvgHelper from '@utils/SvgHelper';
-
+import StarSnippet from '../snippets/StarSnippet';
 
 import './Title.scss';
 
@@ -14,7 +13,7 @@ export default function Title({}: Props): ReactElement {
         <div className="main__title-logo">
           <h2 className="to-upper">Скидка 99%</h2>
           <div className="main__title__offer">
-            <SvgHelper id="star" svgProperties={{fill: "#EC1B24"}}/>
+            <StarSnippet svgProperties={{fill: "#EC1B24"}}/>
           </div>
         </div>
         <div className="main__title-top">
