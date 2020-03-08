@@ -5,7 +5,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 const path = require("path");
 const BUILD_BASE = path.resolve(__dirname, "./dist");
-const config = require("./src/config/config");
+const config = require("./src/config/app");
 
 
 const baseConfig = {

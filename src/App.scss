@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$colors : red, white, blue, ;
+
+
+@each $color in $colors {
+  .text-#{$color} {
+    color: $color;
+  }
+}
+
+.page {
+  /* ====DEBUG==== */
+  width: 1396px;
+  height: 765px;
+}
+
+.container-fluid{
+  width: 100%;
+}
+.to-upper{
+  text-transform: uppercase;
+}

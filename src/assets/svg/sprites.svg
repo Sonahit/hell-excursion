@@ -1,12 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <symbol id="arrow" viewBox="0 0 95 69" fill="none">
+  <symbol id="arrow" viewBox="0 0 95 69">
     <path d="M47 19.5H2V50.5H47V64.5L90.5 35L47 4V19.5Z" stroke="#ED1C24" stroke-width="4"/>
   </symbol>
-  <symbol id="logo" viewBox="0 0 87 76" fill="none">
+  <symbol id="logo" viewBox="0 0 87 76">
     <path d="M3 24V18.5L4.5 13.5L8 7.5L14.5 3.5H22L28.5 4.5L34 7.5L44.5 20L47 15L50.5 10.5L59.5 4L66.5 3L74.5 4L80 8L83 13.5L84.5 19V24L83.5 32.5L80.5 40.5L75 48.5L69 55.5L63 61L56 66L43.5 72.5L31 66L24 61L18 55.5L12 48.5L6.5 40.5L3.5 32.5L3 21" stroke="#ED1C24" stroke-width="5"/>
     <path d="M18.5556 19.7143L7 24.5L18.5556 29.2857L23 40L27.4444 29.2857L39 24.5L27.4444 19.7143L23 9L18.5556 19.7143Z" stroke="#ED1C24" stroke-width="5"/>
     <path d="M59.5556 19.7143L48 24.5L59.5556 29.2857L64 40L68.4444 29.2857L80 24.5L68.4444 19.7143L64 9L59.5556 19.7143Z" stroke="#ED1C24" stroke-width="5"/>
     <path d="M63.5 60L59 51.5L54.5 40.5L48 27.5L44.5 22L41.5 27.5L34 40.5L27.5 51.5L23 60" stroke="#ED1C24" stroke-width="5"/>
+  </symbol>
+    
+  <symbol id="star" viewBox="0 0 167 152">
+    <path d="M5 112L30.5 76.5L5 39.5H55.5L83.5 4.5L111 39.5H162L137 76.5L162 112H113L83.5 147.5L55 112H5Z" stroke="black" stroke-width="5"/>
+  </symbol>
+  <symbol id="arrow-big" viewBox="0 0 221 214">
+    <path d="M109.75 40.25L216.25 106.75L109.75 173.25L109.75 139.75L2.75 139.75L2.75 73.75L109.75 73.75L109.75 40.25Z" stroke="#ED1C24" stroke-width="5"/>
   </symbol>
 </svg>
 

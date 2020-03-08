@@ -1,0 +1,111 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: black;
+  &-nav{
+    display: grid;
+    grid-template-areas:
+    "a b c c d d";
+    width: 100%;
+    & svg {
+      z-index: 2;
+    }
+    &__right-there, &__up-there, &__down-there, &__left-there{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      color: red;
+      justify-self: center;
+      align-self: center;
+      p{
+        z-index: 20;
+        font-size: 30px;
+      }
+      svg{
+        z-index: 10;
+      }
+    }
+
+    &__up-there, &__down-there{
+      width: 200%;
+      height: 220%;
+      top: 70%;
+      padding: 20px;
+      p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 5px;
+        word-wrap: break-word;
+      }
+    }
+    &__left-there, &__right-there{
+      width: 150%;
+      p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &__right-there {
+      grid-area: a;
+      p{
+        left: 40%;
+      }
+    }
+
+    &__left-there {
+      grid-area: b;
+      padding-left: 10px;
+      position: relative;
+      left: 40%;
+      p{
+        left: 60%;
+      }
+    }
+
+    &__up-there {
+      grid-area: c;
+      left: 5%;
+    }
+
+    &__down-there {
+      grid-area: d;
+      right: -5%;
+    }
+  }
+  &-logo, &-title{
+    z-index: 20;
+  }
+
+  &-logo{
+    width: 30%;
+    padding: 10px;
+  }
+
+  &-title{
+    display: flex;
+    align-items: flex-end;
+    width: 70%;
+    color: white;
+    font-size: 24px;
+    h1 {
+      padding: 0 20px 0 0;
+      font-weight: bold;
+    }
+    &__accent{
+      padding: 0 20px;
+      border: 7px red solid;
+      border-radius: 30%;
+      p {
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+    }
+  }
+}

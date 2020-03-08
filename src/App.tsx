@@ -1,17 +1,16 @@
 import React, { ReactElement, lazy } from 'react'
-import Footer from '@components/common/Footer'
-import Header from '@components/common/Header'
-import Layout from '@components/common/Layout'
-
+import Layout from '@components/Layout'
+import Header from '@components/Header'
+import Home from '@components/Home';
+import Footer from '@components/Footer'
 import './App.scss';
+
 
 export default function App(): ReactElement {
   return (
     <Layout>
       <Header/>
-      <main className="main">
-        Hello
-      </main>
+      <Home/>
       <Footer/>
     </Layout>
   )
