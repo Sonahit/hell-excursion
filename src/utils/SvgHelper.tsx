@@ -10,7 +10,7 @@ export default function AssetsHelper({ id, className = "", styles={}, svgPropert
 
   return (
   <svg focusable="true" className={className} style={styles} {...svgProperties}>
-    <use xlinkHref={`/assets/svg/sprites.svg#${id}`}/>
+    <use href={`/assets/svg/sprites.svg#${id}`} xlinkHref={`/assets/svg/sprites.svg#${id}`}/>
   </svg>
   )
 }
