@@ -26,8 +26,8 @@
 
     &__up-there, &__down-there{
       position: absolute;
-      width: 60%;
-      height: 60%;
+      width: 400px;
+      height: 370px;
       top: 0%;
       p{
         position: absolute;
@@ -40,9 +40,8 @@
     }
     &__left-there, &__right-there{
       position: absolute;
-      width: 8%;
-      height: 50%;
-      top: -15%;
+      width: 140px;
+      height: 140px;
       p{
         position: absolute;
         top: 50%;
@@ -52,14 +51,14 @@
     }
 
     &__right-there {
-      left: 10%;
+      left: 200px;
       p{
         left: 40%;
       }
     }
 
     &__left-there {
-      left: 20%;
+      left: 350px;
       p{
         left: 60%;
       }
@@ -71,7 +70,7 @@
 
     &__down-there {
       grid-area: d;
-      left: 16%;
+      left: 600px;
     }
   }
   &-logo, &-title{
